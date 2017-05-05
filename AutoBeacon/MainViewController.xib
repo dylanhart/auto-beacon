@@ -8,6 +8,11 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainViewController" customModule="AutoBeacon" customModuleProvider="target">
             <connections>
+                <outlet property="broadcastButton" destination="d4h-xu-H6o" id="heL-S1-e1p"/>
+                <outlet property="majorField" destination="OX5-YZ-hYn" id="Yvx-rE-aEo"/>
+                <outlet property="minorField" destination="7ts-cr-hgC" id="Tjv-4S-RLT"/>
+                <outlet property="statusLabel" destination="RsM-hh-Lg3" id="hpp-le-cp2"/>
+                <outlet property="uuidField" destination="mW5-A7-Uuf" id="0Om-yI-5wU"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -80,11 +85,14 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="toggleAdvertisingWithSender:" target="-2" id="Yhn-5x-Blm"/>
+                    </connections>
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RsM-hh-Lg3">
                     <rect key="frame" x="18" y="69" width="199" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Not Broadcasting" id="fwX-qc-Z66">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status..." id="fwX-qc-Z66">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -110,6 +118,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="performQuitWithSender:" target="-2" id="Lwu-YH-hGI"/>
+                    </connections>
                 </button>
             </subviews>
             <point key="canvasLocation" x="65.5" y="116.5"/>

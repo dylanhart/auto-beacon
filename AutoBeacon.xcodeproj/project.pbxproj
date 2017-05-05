@@ -12,6 +12,7 @@
 		FCF8982F1EBC2F820013BF83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF8982D1EBC2F820013BF83 /* Main.storyboard */; };
 		FCF898381EBC36070013BF83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF898361EBC36070013BF83 /* MainViewController.swift */; };
 		FCF898391EBC36070013BF83 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF898371EBC36070013BF83 /* MainViewController.xib */; };
+		FCF8983C1EBC485D0013BF83 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF8983B1EBC485D0013BF83 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FCF898301EBC2F820013BF83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCF898361EBC36070013BF83 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FCF898371EBC36070013BF83 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		FCF8983B1EBC485D0013BF83 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF8983C1EBC485D0013BF83 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				FCF898261EBC2F810013BF83 /* AutoBeacon */,
 				FCF898251EBC2F810013BF83 /* Products */,
+				FCF8983A1EBC485D0013BF83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				FCF898371EBC36070013BF83 /* MainViewController.xib */,
 			);
 			path = AutoBeacon;
+			sourceTree = "<group>";
+		};
+		FCF8983A1EBC485D0013BF83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCF8983B1EBC485D0013BF83 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
